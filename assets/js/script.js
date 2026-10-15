@@ -113,6 +113,17 @@ console.log(`10 è divisibile per 3 o 7: ${divisibilePer3o7(10)}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function invertiStringa(testo) {
+  let testoOriginale = testo.split("");
+  let risultato = "";
+
+  for (let i = testoOriginale.length - 1; i >= 0; i--) {
+    risultato += testoOriginale[i];
+  }
+  return risultato;
+}
+
+console.log(`EPICODE al contario è:  ${invertiStringa(`EPICODE`)}`);
 
 /* ESERCIZIO 8 — inizialiMaiuscole
    Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
@@ -122,6 +133,18 @@ console.log(`10 è divisibile per 3 o 7: ${divisibilePer3o7(10)}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function inizialiMaiuscole(frase) {
+  const maiuscola = frase.split(" ");
+
+  for (let i = 0; i < maiuscola.length; i++) {
+    const prima = maiuscola[i].slice(0, 1).toUpperCase();
+    const dopo = maiuscola[i].slice(1);
+    maiuscola[i] = prima + dopo;
+  }
+  return maiuscola.join(" ");
+}
+
+console.log(inizialiMaiuscole(`oggi sono felice`));
 
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
@@ -130,6 +153,11 @@ console.log(`10 è divisibile per 3 o 7: ${divisibilePer3o7(10)}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function togliPrimoEUltimo(testo) {
+  return testo.slice(1, testo.length - 1);
+}
+
+console.log(togliPrimoEUltimo("EPICODE"));
 
 /* ESERCIZIO 10 — dammiCasuali
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
@@ -137,6 +165,18 @@ console.log(`10 è divisibile per 3 o 7: ${divisibilePer3o7(10)}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function dammiCasuali(n) {
+  const array = [];
+
+  for(let i = 0; i < n; i++){
+    const numero = Math.floor(Math.random() * 11);
+    array.push(numero);
+  }
+  return array;
+}
+
+console.log(dammiCasuali (5));
 
 /* --EXTRA-- ESERCIZIO 11 — etaInGiorni
    Funzione etaInGiorni(annoNascita, meseNascita, giornoNascita).
