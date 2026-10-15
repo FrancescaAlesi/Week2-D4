@@ -96,6 +96,15 @@ console.log(epify(`Week2`));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function divisibilePer3o7(n) {
+  return n % 3 === 0 || n % 7 === 0;
+}
+
+console.log(`21 è divisibile per 3 o 7: ${divisibilePer3o7(21)} `);
+console.log(`79 è divisibile per 3 o 7: ${divisibilePer3o7(79)}`);
+console.log(`14 è divisibile per 3 o 7: ${divisibilePer3o7(14)}`);
+console.log(`10 è divisibile per 3 o 7: ${divisibilePer3o7(10)}`);
+
 /* ESERCIZIO 7 — invertiStringa
    Funzione invertiStringa(testo): ritorna la stringa invertita.
    Vincolo: niente .reverse() di array.
@@ -103,6 +112,7 @@ console.log(epify(`Week2`));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 8 — inizialiMaiuscole
    Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
@@ -112,12 +122,14 @@ console.log(epify(`Week2`));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
    Usa slice. Prova con "EPICODE".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 10 — dammiCasuali
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
